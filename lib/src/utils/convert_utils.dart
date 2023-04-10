@@ -81,6 +81,7 @@ class ConvertUtils {
       isFavorite: data['favorite'] as bool? ?? false,
       title: data['title'] as String? ?? title,
       subtype: data['subtype'] as int? ?? 0,
+      sizeOnDisk: data['sizeOnDisk'] as int? ?? 0,
       createDateSecond: data['createDt'] as int?,
       modifiedDateSecond: data['modifiedDt'] as int?,
       relativePath: data['relativePath'] as String?,

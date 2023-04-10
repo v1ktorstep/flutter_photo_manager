@@ -215,4 +215,15 @@
     return resource;
 }
 
+- (NSInteger) sizeOnDisk{
+    NSArray<PHAssetResource *> *resources = [PHAssetResource assetResourcesForAsset:self];
+    NSInteger sizeOnDisk = 0;
+    
+    for (PHAssetResource *resource in resources) {
+        sizeOnDisk += [[resource valueForKey:@"fileSize"] integerValue];
+    }
+    
+    return sizeOnDisk;
+}
+
 @end

@@ -89,6 +89,7 @@
         @"lat": @(asset.location.coordinate.latitude),
         @"title": needTitle ? [asset title] : @"",
         @"subtype": @(asset.mediaSubtypes),
+        @"sizeOnDisk": @(asset.sizeOnDisk),
     };
 }
 
@@ -107,6 +108,7 @@
         @"lat": @(asset.lat),
         @"title": needTitle ? asset.title : @"",
         @"subtype": @(asset.subtype),
+        @"sizeOnDisk": @(asset.sizeOnDisk),
     };
 }
 

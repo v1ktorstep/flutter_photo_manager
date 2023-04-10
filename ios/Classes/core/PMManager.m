@@ -362,6 +362,7 @@
     entity.title = needTitle ? [asset title] : @"";
     entity.favorite = asset.isFavorite;
     entity.subtype = asset.mediaSubtypes;
+    entity.sizeOnDisk = asset.sizeOnDisk;
 
     return entity;
 }
